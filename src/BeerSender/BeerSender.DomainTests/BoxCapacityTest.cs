@@ -10,7 +10,7 @@ public class BoxCapacityTest
     [InlineData(24)]
     public void IfCapacityIsValid_ShouldReturnNewCapacity(int numberOfSpots)
     {
-        var capacity = new BoxCapacity(numberOfSpots);
+        var capacity = BoxCapacity.FromNumberOfSpots(numberOfSpots);
     }
 
     [Theory]
@@ -21,7 +21,7 @@ public class BoxCapacityTest
     {
         Assert.Throws<ArgumentException>(() =>
         {
-            var capacity = new BoxCapacity(numberOfSpots);
+            var capacity = BoxCapacity.FromNumberOfSpots(numberOfSpots);
         });
     }
 };

@@ -2,32 +2,27 @@
 
 public class BoxCapacity
 {
-    public int NumberOfSpots { get; init; }
+    public NumberOfSpots NumberOfSpots { get; init; }
 
-    public BoxCapacity(int numberOfSpots)
+    public BoxCapacity(NumberOfSpots numberOfSpots)
     {
-        switch (numberOfSpots)
-        {
-            case 6:
-            case 12:
-            case 24:
-                NumberOfSpots = numberOfSpots;
-                break;
-            default:
-                throw new ArgumentException("Invalid capacity", nameof(numberOfSpots));
-        }
+        NumberOfSpots = numberOfSpots;
     }
 
-    public class Brewery
+    public static BoxCapacity FromNumberOfSpots(int numberOfSpots)
     {
-        public string? Name { get; set; }
-        public string? Town { get; set; }
-    }
+        if (!Enum.IsDefined(typeof(NumberOfSpots), numberOfSpots))
+            throw new ArgumentException("Invalid capacity", nameof(numberOfSpots));
 
-    public class BeerBottle
-    {
-        public Brewery? Brewery { get; set; }
-        public string? Name { get; set; }
-        public decimal AlcoholPercentage { get; set; }
+        var spots = (NumberOfSpots)numberOfSpots;
+
+        return new BoxCapacity(spots);
     }
+}
+
+public enum NumberOfSpots
+{
+    Six = 6,
+    Twelve = 12,
+    TwentyFour = 24
 }
