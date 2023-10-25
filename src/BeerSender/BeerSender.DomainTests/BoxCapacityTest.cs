@@ -19,7 +19,7 @@ public class BoxCapacityTest
     [InlineData(23)]
     public void IfCapacityIsInvalid_ShouldThrowException(int numberOfSpots)
     {
-        Assert.Throws<ArgumentException>(() =>
+        Assert.Throws<InvalidNumberOfSpotsException>(() =>
         {
             var capacity = BoxCapacity.FromNumberOfSpots(numberOfSpots);
         });

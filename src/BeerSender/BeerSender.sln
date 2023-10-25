@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSender.Domain", "BeerSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSender.DomainTests", "BeerSender.DomainTests\BeerSender.DomainTests.csproj", "{9725D50F-3E70-454C-A886-5E6E9F898892}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSender.Application", "BeerSender.Application\BeerSender.Application.csproj", "{E41A22A2-8D7C-44B8-BC3F-D0877F857B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSender.Persistence", "BeerSender.Persistence\BeerSender.Persistence.csproj", "{91DB1F1A-574E-402C-814D-11ED78F1708B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSender.Presentation", "BeerSender.Presentation\BeerSender.Presentation.csproj", "{57A86EE0-2E42-4EEE-96D9-ED0D76406A72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSender.Infrastructure", "BeerSender.Infrastructure\BeerSender.Infrastructure.csproj", "{09F2D646-07E0-4CC7-8D9D-DB5572731828}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{9725D50F-3E70-454C-A886-5E6E9F898892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9725D50F-3E70-454C-A886-5E6E9F898892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9725D50F-3E70-454C-A886-5E6E9F898892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41A22A2-8D7C-44B8-BC3F-D0877F857B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41A22A2-8D7C-44B8-BC3F-D0877F857B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41A22A2-8D7C-44B8-BC3F-D0877F857B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41A22A2-8D7C-44B8-BC3F-D0877F857B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DB1F1A-574E-402C-814D-11ED78F1708B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DB1F1A-574E-402C-814D-11ED78F1708B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DB1F1A-574E-402C-814D-11ED78F1708B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DB1F1A-574E-402C-814D-11ED78F1708B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A86EE0-2E42-4EEE-96D9-ED0D76406A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A86EE0-2E42-4EEE-96D9-ED0D76406A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A86EE0-2E42-4EEE-96D9-ED0D76406A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A86EE0-2E42-4EEE-96D9-ED0D76406A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F2D646-07E0-4CC7-8D9D-DB5572731828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F2D646-07E0-4CC7-8D9D-DB5572731828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F2D646-07E0-4CC7-8D9D-DB5572731828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F2D646-07E0-4CC7-8D9D-DB5572731828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,7 +12,7 @@ public class BoxCapacity
     public static BoxCapacity FromNumberOfSpots(int numberOfSpots)
     {
         if (!Enum.IsDefined(typeof(NumberOfSpots), numberOfSpots))
-            throw new ArgumentException("Invalid capacity", nameof(numberOfSpots));
+            throw new InvalidNumberOfSpotsException();
 
         var spots = (NumberOfSpots)numberOfSpots;
 
@@ -26,3 +26,5 @@ public enum NumberOfSpots
     Twelve = 12,
     TwentyFour = 24
 }
+
+public class InvalidNumberOfSpotsException : Exception { }
